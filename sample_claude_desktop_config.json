@@ -4,7 +4,7 @@
             "command": "<UV_PATH>",
             "args": [
                 "--directory",
-                "<PATH_TO_ARTEMIS_MCP_REPO>",
+                "<PATH_TO_ARTEMIS_MCP_REPO>/src",
                 "run",
                 "artemis.py"
             ],
@@ -16,7 +16,7 @@
             "command": "<UV_PATH>",
             "args": [
                 "--directory",
-                "<PATH_TO_ARTEMIS_MCP_REPO>",
+                "<PATH_TO_ARTEMIS_MCP_REPO>/src",
                 "run",
                 "artemis_plugins.py"
             ]
