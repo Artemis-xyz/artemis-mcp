@@ -27,8 +27,8 @@ jobs:
         # GH actions/codespaces doesn't allow for system-level permissions
         run: |
           pip install uv==0.2.15 virtualenv==20.26.3
-          virtualenv venv-artemis
-          . ./venv-artemis/bin/activate
+          uv venv
+          source .venv/bin/activate
           uv sync
 
   bump-version:
@@ -82,8 +82,8 @@ jobs:
         # GH actions/codespaces doesn't allow for system-level permissions
         run: |
           pip install uv==0.2.15 virtualenv==20.26.3
-          virtualenv venv-artemis
-          . ./venv-artemis/bin/activate
+          uv venv
+          source .venv/bin/activate
           uv sync
       - name: Build package
         run: uv build
