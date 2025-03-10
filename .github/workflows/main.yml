@@ -34,7 +34,7 @@ jobs:
   bump-version:
     runs-on: ubuntu-22.04
     needs: [tests]
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    if: github.event_name == 'push'
     steps:
       - uses: actions/checkout@v3
         with:
@@ -81,7 +81,7 @@ jobs:
         # need to use a virtualenv here because uv doesn't yet support pip's --user flag and
         # GH actions/codespaces doesn't allow for system-level permissions
         run: |
-          pip install uv==0.2.15 virtualenv==20.26.3
+          pip install uv==0.6.5 virtualenv==20.26.3
           uv venv
           source .venv/bin/activate
           uv sync
