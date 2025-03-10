@@ -85,12 +85,6 @@ jobs:
           virtualenv venv-artemis
           . ./venv-artemis/bin/activate
           uv sync
-      - name: Bump Verison
-          run: |
-            v=$(uvx --from=toml-cli toml get --toml-path=pyproject.toml project.version)
-            # bump patch version
-            part="patch"
-            uvx --from bump2version bumpversion --allow-dirty --current-version "$v" "$part" pyproject.toml
       - name: Build package
         run: uv build
       - name: Publish to PyPI
