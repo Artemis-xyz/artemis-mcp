@@ -25,7 +25,7 @@ def main():
     pyproject_path = os.path.join(project_root, "pyproject.toml")
     pyproject_pattern = r'(version\s*=\s*["\'])(\d+\.\d+\.\d+)(["\'])'
 
-    init_path = os.path.join(project_root, "src", "driftpy", "__init__.py")
+    init_path = os.path.join(project_root, "src", "__init__.py")
     init_pattern = r'(__version__\s*=\s*["\'])(\d+\.\d+\.\d+)(["\'])'
 
     bumpversion_path = os.path.join(project_root, ".bumpversion.cfg")
