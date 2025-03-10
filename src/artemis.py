@@ -107,7 +107,6 @@ class ArtemisConnectManager:
     
     async def make_artemis_request(self, url: str) -> dict[str, Any] | None:
         """Make a request to the Artemis API with proper error handling."""
-        # test comments
         async with httpx.AsyncClient() as client:
             try:
                 response = await client.get(url, timeout=30.0)
