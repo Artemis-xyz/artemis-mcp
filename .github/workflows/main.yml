@@ -13,7 +13,7 @@ defaults:
 
 jobs:
   tests:
-    runs-on: ubicloud
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python 3.10
@@ -31,7 +31,7 @@ jobs:
         run: poetry install
 
   bump-version:
-    runs-on: ubicloud
+    runs-on: ubuntu-22.04
     needs: [tests]
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     steps:
@@ -57,7 +57,7 @@ jobs:
           branch: ${{ github.ref }}
 
   release:
-    runs-on: ubicloud
+    runs-on: ubuntu-22.04
     needs: [bump-version]
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     steps:
