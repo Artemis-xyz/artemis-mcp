@@ -1,25 +1,13 @@
 {
     "mcpServers": {
         "artemis": {
-            "command": "<UV_PATH>",
+            "command": "uvx",
             "args": [
-                "--directory",
-                "<PATH_TO_ARTEMIS_MCP_REPO>/src",
-                "run",
-                "artemis.py"
+                "artemis-mcp"
             ],
             "env": {
                 "ARTEMIS_API_KEY": "<ARTEMIS_API_KEY>"
             }
-        },
-        "artemis-plugin": {
-            "command": "<UV_PATH>",
-            "args": [
-                "--directory",
-                "<PATH_TO_ARTEMIS_MCP_REPO>/src",
-                "run",
-                "artemis_plugins.py"
-            ]
         }
     }
 }

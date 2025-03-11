@@ -42,7 +42,19 @@ Fill out the relevant fields in `claude_desktop_config.json`:
 - `<UV_PATH>` - Path to uv executable (run `where python` on MacOS)
 - `<PATH_TO_ARTEMIS_MCP_REPO>` - Path to local clone of the Artemis MCP repo
 - `<ARTEMIS_API_KEY>` - Your Artemis API Key
-- `<SNOWFLAKE_USER>` - Your Artemis Snowflake email. User must have access to either `PC_DBT_ROLE` or `READ_ONLY_ROLE`
 
 - Restart Claude Desktop
 - Artemis MCP Tools should now be available!
+
+## Available Tools
+
+The Artemis MCP server provides the following tools:
+
+### API Tools
+- `validate-artemis-api-key`: Creates and validates connection to Artemis API
+- `get-artemis-data`: Retrieves data from Artemis API for given crypto token symbols and metrics
+- `get-artemis-supported-metrics-for-symbol`: Retrieves supported metrics for a given crypto token symbol
+
+### Formula Generation Tools
+- `generate-art-formula`: Generates an ART formula for retrieving crypto prices, fees, revenue, and other time-series data
+- `generate-artinfo-formula`: Generates an ARTINFO formula for asset classifications, available metrics, market cap rankings, and metadata
