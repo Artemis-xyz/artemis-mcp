@@ -3,7 +3,7 @@ name = "artemis-mcp"
 authors = [
     {name = "Son Do", email = "team@artemis.xyz"}
 ]
-version = "0.1.5"
+version = "0.1.6"
 description = "Artemis MCP Server to Connect with Artemis API and Create ART Formulas"
 readme = "README.md"
 requires-python = ">=3.10"
