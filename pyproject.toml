@@ -7,12 +7,19 @@ version = "0.1.5"
 description = "Artemis MCP Server to Connect with Artemis API and Create ART Formulas"
 readme = "README.md"
 requires-python = ">=3.10"
+keywords = ["artemis", "mcp", "crypto", "stablecoins", "digital finance"]
 dependencies = [
     "build>=1.2.2.post1",
     "httpx>=0.28.1",
     "mcp[cli]>=1.3.0",
     "twine>=6.1.0",
 ]
+
+[project.scripts]
+artemis-mcp = "artemis_mcp:main"
+
 [project.urls]
-Homepage = "https://github.com/Artemis-xyz/artemis-mcp"
+Homepage = "https://artemis.xyz"
 Repository = "https://github.com/Artemis-xyz/artemis-mcp"
+Documentation = "https://github.com/Artemis-xyz/artemis-mcp#readme"
+"Bug Tracker" = "https://github.com/Artemis-xyz/artemis-mcp/issues"
