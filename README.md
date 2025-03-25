@@ -8,6 +8,8 @@
  /_/   \_\_| \_\|_| |_____|_|  |_|___|____/  |_|  |_|\____|_|
 ```
 
+[![opentools](https://img.shields.io/badge/OpenTools-official-ffffff?labelColor=101828&color=ffffff&logoColor=101828)](https://opentools.com/registry/stripe)
+
 ## Prerequisites
 
 - Python 3.11+
